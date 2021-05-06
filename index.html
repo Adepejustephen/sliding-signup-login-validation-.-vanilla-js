@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> sliding signup/login validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8765bb884b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <form action="" class="form" id="register">
+            <div class="header">
+            <h2>join us</h2>
+        </div>
+            <div class="form-control">
+                <label >username</label>
+                <input type="text" placeholder="john99" id="username">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error message</small>
+            </div>
+             <div class="form-control">
+                <label >email</label>
+                <input type="email" placeholder="john99@co.uk" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <label>password</label>
+                <input type="password" placeholder="******" id="password">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <label>verify password</label>
+                <input type="password" placeholder="*******" id="password2">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error message</small>
+            </div>
+            <div class="btns">
+                <button class="submit1 btn">submit</button>
+                <div class="btn-switch btn" id="login-btn">login</div>
+            </div>
+        </form>
+
+
+         <form action="" class="form" id="login">
+            <div class="header">
+            <h2>login</h2>
+        </div>
+            <div class="form-control">
+                <label >username</label>
+                <input type="text" placeholder="john99" id="login-username" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error message</small>
+            </div>
+            <div class="form-control">
+                <label>password</label>
+                <input type="password" placeholder="******" id="login-password" required>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error message</small>
+            </div>
+              <div class="btns">
+                <button class="submit2 btn">submit</button>
+                <div class="btn-switch btn" id="signup-btn">Create account</div>
+            </div>
+        </form>
+    </div>
+    
+
+
+<script src="app.js"></script>
+</body>
+</html>
